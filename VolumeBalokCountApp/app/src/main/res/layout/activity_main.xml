@@ -12,10 +12,6 @@
 
     tools:context="com.example.user.activitybarvolume.MainActivity">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -23,15 +19,10 @@
 
             <ImageView
                 android:id="@+id/model_image"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="348dp"
+                android:layout_height="128dp"
                 android:src="@drawable/ic_launcher_background"
                 android:adjustViewBounds="true"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/panjang"
-                android:layout_marginBottom="@dimen/activity_vertical_margin"/>
 
             <EditText
                 android:id="@+id/et_panjang"
@@ -39,12 +30,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="numberDecimal"
                 android:lines="1"
-                android:layout_marginBottom="@dimen/activity_vertical_margin"/>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/lebar"
+                android:hint="Panjang"
                 android:layout_marginBottom="@dimen/activity_vertical_margin"/>
 
             <EditText
@@ -53,12 +39,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="numberDecimal"
                 android:lines="1"
-                android:layout_marginBottom="@dimen/activity_vertical_margin"/>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/tinggi"
+                android:hint="Lebar"
                 android:layout_marginBottom="@dimen/activity_vertical_margin"/>
 
             <EditText
@@ -67,6 +48,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="numberDecimal"
                 android:lines="1"
+                android:hint="Tinggi"
                 android:layout_marginBottom="@dimen/activity_vertical_margin"/>
 
             <Button
@@ -88,7 +70,5 @@
                 android:textStyle="bold"
                 android:layout_marginBottom="@dimen/activity_vertical_margin"/>
         </LinearLayout>
-
-    </ScrollView>
 
 </LinearLayout>
